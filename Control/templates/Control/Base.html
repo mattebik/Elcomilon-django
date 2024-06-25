@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL COMILON</title>
+    <link rel="stylesheet" href='{% static "/css/estilo.css" %}'> 
+    
+	<style>
+		.banner {
+			background-image: linear-gradient(100deg, #000000, #00000020),
+			url("{% static 'img/comida.png' %}");
+			height: 70rem;
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-burger"></i>
+                    <h1 class="logo"><a href="/">EL COMILON</a></h1>
+                </div>
+
+                <div class="container-user">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href=" ">Inicio</a></li>
+                    <li><a href="/menu/" method="GET">Menu</a></li>
+                    <li><a href="/formulario/" method="GET">cuenta</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+</header>
+<!--CONTENIDO CAMBIANTE-->
+{% block content %}
+
+{% endblock %}
+<footer class="footer">
+    <div class="container container-footer">
+        <div class="menu-footer">
+            <div class="contact-info">
+                <p class="title-footer">Información de Contacto</p>
+                <ul>
+                    <li>
+                        Dirección: Av. Pdte. Kennedy 9001, Local 3248, 7591567 Las Condes, Región Metropolitana
+                    </li>
+                    <li>Teléfono: 123-456-7890</li>
+                    <li>Fax: 55555300</li>
+                    <li>EmaiL: elcomilon@gmail.com</li>
+                </ul>
+                <div class="social-icons">
+                    <span class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                    <span class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                    <span class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                    <span class="pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </span>
+                    <span class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="information">
+                <p class="title-footer">Información</p>
+                <ul>
+                    <li><a href="#">Acerca de Nosotros</a></li>
+                    <li><a href="#">Información Delivery</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Contactános</a></li>
+                </ul>
+            </div>
+
+            <div class="my-account">
+                <p class="title-footer">Mi cuenta</p>
+
+                <ul>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Historial de ordenes</a></li>
+                    <li><a href="#">Lista de deseos</a></li>
+                    <li><a href="#">Boletín</a></li>
+                    <li><a href="#">Reembolsos</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <p class="title-footer">Boletín informativo</p>
+
+                <div class="content">
+                    <p>
+                        Suscríbete con tu correo ahora y mantente al
+                        día con nuevas ofertas exclusivas.
+                    </p>
+                    <input type="email" placeholder="Ingresa el correo aquí...">
+                    <button>Suscríbete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                Desarrollado por Miyaray Bastias, Matias Mayorga y Almendra Vilchez &copy; 2024
+            </p>
+
+            <img src='{% static "img/pago.png" %}' alt="Pagos">
+        </div>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/0645e3d1a1.js" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

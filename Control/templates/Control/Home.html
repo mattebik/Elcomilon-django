@@ -1,0 +1,415 @@
+{% extends "Control/Base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="banner">
+        <div class="content-banner">
+            <p>PLATOS RICOS</p>
+            <h2>Platos frescos</h2>
+            <a href="/carrito/">Comprar Ahora</a>
+        </div>
+</section>
+<main class="main-content">
+    <section class="container container-features">
+        <div class="card-feature">
+            <i class="fa-solid fa-car"></i>
+            <div class="feature-content">
+                <span>Envío gratuito dentro de santiago</span>
+                <p>En pedido superior a 15.000</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-feature">
+        <i class="fa-solid fa-wallet"></i>
+        <div class="feature-content">
+            <span>En caso de cualquier error por parte de "EL COMILON"</span>
+            <p>100% devolución de dinero</p>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-gift"></i>
+            <div class="feature-content">
+                <span>Tarjeta regalo especial</span>
+                <p>Ofrece bonos especiales con regalo</p>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Servicio al cliente 24/7</span>
+                    <p>LLámenos 24/7 al 123-456-7890</p>
+                </div>
+</section>
+
+<section class="container top-categories">
+    <h1 class="heading-1">MENU DEL DÍA</h1>
+    <div class="container-categories">
+        <div class="card-category category-ENTRADA">
+            <p>ENTRADA</p>
+            
+        </div>
+        <div class="card-category category-PLATO DE FONDO">
+            <p>PLATO DE FONDO</p>
+          
+        </div>
+        <div class="card-category category-POSTRE">
+            <p>POSTRE</p>
+            
+        </div>
+    </div>
+</section>
+
+<section class="container top-products">
+
+    <div class="container-options">
+        <span class="active">ENTRADA</span>
+        <span>PLATO DE FONDO</span>
+        <span>POSTRE</span>
+    </div>
+
+<div class="container-products">
+					<!-- Producto 1 -->
+<div class="card-product">
+<div class="container-img">
+<img src='{% static "img/humus.jpg" %}' alt="Hummus de Zapallo" />
+<div class="button-group">
+<span>
+<i class="fa-regular fa-eye"></i>
+</span>
+<span>
+<i class="fa-regular fa-heart"></i>
+</span>
+<span>
+<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+                        <div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Hummus de Zapallo</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$3.600</p>
+						</div>
+					</div>
+            
+                  <!-- Producto 2 -->
+                    <div class="card-product">
+						<div class="container-img">
+							<img
+								src='{% static "img/Chorillana.jpg" %}'
+								alt="Chorillana"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Chorrillana</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.600</p>
+						</div>
+					</div>            
+                    <!-- Producto 3 -->      
+                    <div class="card-product">
+						<div class="container-img">
+							<img src='{% static "img/flan.jpg" %}' alt="Flan de caramelo" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Flan de caramelo</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$3.600</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<img
+					src='{% static "img/HAM.webp" %}'
+					alt="Gallery Img1"
+					class="gallery-img-1"
+				/><img
+					src='{% static "img/rollitos.webp" %}'
+					alt="Gallery Img2"
+					class="gallery-img-2"
+				/><img
+					src='{% static "img/afuera.webp" %}'
+					alt="Gallery Img3"
+					class="gallery-img-3"
+				/><img
+					src='{% static "img/sopaipilla.jpg" %}'
+					alt="Gallery Img4"
+					class="gallery-img-4"
+				/><img
+					src='{% static "img/completos.jpg" %}'
+					alt="Gallery Img5"
+					class="gallery-img-5"
+				/>
+			</section>
+
+
+            <section class="container specials">
+				<h1 class="heading-1">ESPECIALES CON DESCUENTO</h1>
+
+				<div class="container-products">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src='{% static "img/sopaipillas-pasadas.jpg" %}' alt="Sopaipillas-pasadas" />
+							<span class="discount">-13%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+                        <div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Sopaipillas-pasadas</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$1.250<span>$2.500</span></p>
+						</div>
+					</div>
+                    <!-- Producto 2 -->
+                    <div class="card-product">
+						<div class="container-img">
+							<img
+								src='{% static "img/tiramisu.webp" %}'
+								alt="tiramisu"
+							/>
+							<span class="discount">-22%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Tiramisu</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$5.700 <span>$7.300</span></p>
+						</div>
+					</div>
+
+                    <!-- producto 3-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src='{% static "img/lasaña.jpg" %}' alt="Lasaña" />
+							<span class="discount">-30%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Lasaña</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.500 <span>$5.500</span></p>
+						</div>
+					</div>
+                     <!-- producto 4-->
+                     <div class="card-product">
+						<div class="container-img">
+							<img src='{% static "img/donas.jpg" %}' alt="Donas" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Donas(sabores mixtos)</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$1.550</p>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="container blogs">
+				<h1 class="heading-1">Últimos Blogs</h1>
+
+				<div class="container-blogs">
+					<div class="card-blog">
+						<div class="container-img">
+							<img src='{% static "img/p1.webp" %}' alt="Imagen Blog 1" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+
+<div class="content-blog">
+    <h3>EL COMILON </h3>
+    <span>02 Junio 2024</span>
+    <p>
+        Muchas gracias!!
+        
+        La empresa en sí es una empresa muy exitosa. ¡ESO ES GENIAL!
+    </p>
+    <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+    <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+    <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+</div>
+</div>
+
+<div class="card-blog">
+    <div class="container-img">
+        <img src='{% static "img/p2.jpg" %}' alt="Imagen Blog 2" />
+        <div class="button-group-blog">
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-link"></i>
+            </span>
+        </div>
+    </div>
+    <div class="content-blog">
+        <h3>Clienta</h3>
+        <span>10 Julio 2024</span>
+        <p>
+            Excelente experiencia, sin duda volvere!!
+        </p>
+        <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+        <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+        <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+    </div>
+</div>
+
+<div class="card-blog">
+    <div class="container-img">
+        <img src='{% static "img/p33.jpg" %}' alt="Imagen Blog 3" />
+        <div class="button-group-blog">
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-link"></i>
+            </span>
+        </div>
+    </div>
+    <div class="content-blog">
+        <h3>Clienta</h3>
+        <span>10 Agosto 2024</span>
+        <p>
+            Compre desde casa y realmente sastifecha con el resultado, Quede feliz!
+        </p>
+        <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+        <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+        <div class="btn-read-more"><i class="fa-regular fa-star"></i></div>
+    </div>
+</div>
+</div>
+</section>
+</main>
+
+{% endblock %}

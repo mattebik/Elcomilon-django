@@ -1,0 +1,70 @@
+/* static/css/estilo4.css */
+.register {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Alinea desde la mitad superior */
+    left: 50%; /* Alinea desde la mitad izquierda */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+    width: 50%; /* Ancho del registro */
+    max-width: 800px; /* Ancho máximo */
+    height: auto; /* Altura automática */
+    background-position: center; /* Posición de fondo centrada */
+    color: rgb(0, 0, 0); /* Color de texto */
+    text-align: center; /* Texto centrado */
+    padding: 100px; /* Relleno de 100 píxeles */
+}
+
+.register input[type=text], 
+.register input[type=email], 
+.register input[type=tel], 
+.register input[type=submit] {
+    width: 470px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    font-family: 'Exo', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.register input[type=submit] {
+    width: 260px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #000000;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.register input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.register input[type=submit]:active {
+    opacity: 0.6;
+}
+
+.register input[type=text], 
+.register input[type=email], 
+.register input[type=tel], 
+.register input[type=submit]:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+::-moz-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
